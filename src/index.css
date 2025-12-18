@@ -1,0 +1,97 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. BRYNDAN WRITE (para textos pequeños/cursiva) */
+@font-face {
+  font-family: 'Bryndan Write';
+  src: url('./assets/fonts/Bryndan_Write.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. UHBEE HANBYEOL (para tu nombre - IMPACTO) */
+@font-face {
+  font-family: 'UhBee HanByeol';
+  src: url('./assets/fonts/UhBee-HanByeol.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* Opcional: desactiva ligaduras para más legibilidad */
+  font-feature-settings: "liga" off, "clig" off, "calt" off;
+}
+
+/* 3. FUENTE SANS-SERIF (para todo lo demás) */
+/* Puedes usar una de Google Fonts o el sistema */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* Clases personalizadas para Tailwind */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+
+  /* Bryndan - cursiva personal */
+  .font-bryndan {
+    font-family: 'Bryndan Write', 'Brush Script MT', cursive;
+    font-style: normal;
+  }
+
+  /* UhBee - impacto visual */
+  .font-uhbee {
+    font-family: 'UhBee HanByeol', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  /* Sans-serif - legibilidad */
+  .font-ui {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+
+/* estilos con comando custom */
+@layer utilities {
+  .text-7xl {
+    font-size: 5rem;
+  }
+
+  .text-8xl {
+    font-size: 6rem;
+  }
+
+  .text-9xl {
+    font-size: 8rem;
+  }
+
+  .text-10xl {
+    font-size: 10rem;
+  }
+
+  .text-11xl {
+    font-size: 11rem;
+  }
+
+  .text-12xl {
+    font-size: 12rem;
+  }
+
+  .text-15xl {
+    font-size: 15rem;
+  }
+}
