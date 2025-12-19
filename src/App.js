@@ -36,21 +36,23 @@ function App() {
               />
             </div>
 
-            {/* Flecha indicadora para scroll */}
-            <div className="mt-20 animate-bounce">
-              <svg
-                className="w-8 h-8 mx-auto text-blue-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                />
-              </svg>
+            {/* Flecha minimalista con borde sutil - VERSIÓN CORREGIDA */}
+            <div className="mt-20">
+              <div className="animate-bounce mx-auto w-20 h-35 rounded-[50px] border-[4px] border-black flex items-center justify-center p-3">
+                <svg
+                  className="w-12 h-25"  
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 48"  /* Simplificado y proporcional */
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M12 4v40m0 0l6-6m-6 6l-6-6"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </header>
