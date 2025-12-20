@@ -28,7 +28,7 @@ function App() {
               Frontend developer
             </p>
 
-            <div className="absolute left-[-15px] bottom-[270px] z-0 w-[200px] md:w-[250px] lg:w-[250px]">
+            <div className="absolute left-[-15px] z-0 w-[200px] md:w-[250px] lg:w-[250px]">
               <img
                 src={miPorfoImage}
                 alt="Dibujo a mano representando a Alba Ayala"
@@ -43,7 +43,7 @@ function App() {
                   className="w-12 h-25"  
                   fill="none"
                   stroke="currentColor"
-                  viewBox="0 0 24 48"  /* Simplificado y proporcional */
+                  viewBox="0 0 24 48"
                 >
                   <path
                     strokeLinecap="round"
@@ -56,35 +56,6 @@ function App() {
             </div>
           </div>
         </header>
-
-        {/* Footer */}
-        <footer className="py-12 bg-gray-900 text-white text-center relative z-10">
-          <div className="max-w-3xl mx-auto px-4">
-            <p className="text-3xl font-uhbee mb-6 text-white">
-              ALBA AYALA
-            </p>
-            <p className="text-gray-400 mb-8 font-sans">
-              Frontend Developer & UI Designer
-            </p>
-            <div className="flex justify-center gap-6 mb-8 font-sans">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                GitHub
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                LinkedIn
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Twitter
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                Email
-              </a>
-            </div>
-            <p className="text-gray-500 text-sm font-sans">
-              © {new Date().getFullYear()} Alba Ayala. All rights reserved.
-            </p>
-          </div>
-        </footer>
       </div>
     </div>
   );
