@@ -24,7 +24,6 @@
 }
 
 /* 3. FUENTE SANS-SERIF (para todo lo demás) */
-/* Puedes usar una de Google Fonts o el sistema */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 /* Clases personalizadas para Tailwind */
@@ -64,8 +63,7 @@
   }
 }
 
-
-/* estilos con comando custom */
+/* Utilidades personalizadas */
 @layer utilities {
   .text-7xl {
     font-size: 5rem;
@@ -94,4 +92,38 @@
   .text-15xl {
     font-size: 15rem;
   }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+/* Estilos globales adicionales */
+
+/* Scroll personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Selección de texto */
+::selection {
+  background-color: rgba(236, 72, 153, 0.2);
+  color: #000;
 }

@@ -1,41 +1,34 @@
-/* App.css - VERSIÓN CORREGIDA */
+/* App.css - VERSIÓN BLACK & WHITE */
 .App {
-  background-image: url('./assets/images/fondito-profo.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #ffffff;
   min-height: 100vh;
   position: relative;
 }
 
-/* Contenido sobre el overlay */
-.App > * {
-  position: relative;
-  z-index: 2;
-}
-
-
-/* App.css - ACTUALIZADO */
-.btn-primary {
-  background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+/* Botones en B&W */
+.btn-black {
+  background-color: #000000;
   color: white;
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
   text-align: center;
   display: inline-block;
-  border: none;
+  border: 2px solid #000000;
   cursor: pointer;
 }
 
-.btn-primary:hover {
+.btn-black:hover {
+  background-color: white;
+  color: #000000;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.btn-outline {
-  background: transparent;
-  color: #3B82F6;
-  border: 2px solid #3B82F6;
+.btn-outline-black {
+  background-color: transparent;
+  color: #000000;
+  border: 2px solid #000000;
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -44,17 +37,30 @@
   cursor: pointer;
 }
 
-.btn-outline:hover {
-  background: #3B82F6;
+.btn-outline-black:hover {
+  background-color: #000000;
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Opcional: Si quieres que se vea más compacto en móviles */
-@media (max-width: 640px) {
-  .btn-primary, .btn-outline {
-    padding: 0.75rem 2rem !important;
-    font-size: 1.125rem !important;
+/* Mejoras para scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Filtro para imágenes en B&W */
+.filter-grayscale {
+  filter: grayscale(100%);
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 8rem !important;
+  }
+  
+  .hero-title {
+    font-size: 4rem !important;
   }
 }
