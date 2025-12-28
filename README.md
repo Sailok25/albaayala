@@ -10,7 +10,6 @@ Link aquí: -
 - **Diseño Moderno**: Interfaz limpia y atractiva con tipografía personalizada
 - **Totalmente Responsive**: Adaptado a todos los dispositivos (móvil, tablet, desktop)
 - **Optimizado para Performance**: Carga rápida y experiencia de usuario fluida
-- **Accesibilidad**: Implementa las mejores prácticas de accesibilidad web
 - **Animaciones Suaves**: Transiciones y efectos visuales cuidadosamente diseñados
 
 ## 🚀 Instalación y Uso
