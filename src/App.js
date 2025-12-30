@@ -1,5 +1,10 @@
 import './App.css';
 import miPorfoImage from './assets/images/mi-porfo.svg';
+import contaPizzaImg from './assets/images/projects/Conta-Pizza.png';
+import progitImg from './assets/images/projects/progit-2nd-edition-ca.png';
+import danDanDishImg from './assets/images/projects/Dan-Dan-Dish.png';
+import catarsisImg from './assets/images/projects/Catarsis.png';
+import cdlsImg from './assets/images/projects/CDLS.png';
 import albaayala from './assets/images/alba-ayala.jpg';
 import ExperienceItem from './components/ExperienceItem';
 import ProjectCard from './components/ProjectCard';
@@ -35,19 +40,63 @@ function App() {
   const projects = [
     {
       id: 1,
-      title: "Project React + Tailwind",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      technologies: ["REACT", "TAILWIND", "HTML5"],
+      title: "ContaPizza",
+      description: "Una app que gestiona el día que le toca hacer la pizza en casa a mis hermanos y a mí.",
+      technologies: ["React", "Tailwind", "HTML5"],
       repoUrl: "#",
       demoUrl: "#",
-      image: "project1.jpg"
+      image: contaPizzaImg
+    },
+    {
+      id: 2,
+      title: "ProGit (2º Edition) - Catalan Version",
+      description: "Traducción del libro 'Pro Git' (2ª edición) al catalán. Un proyecto de contribución open-source que hace la documentación de Git accesible a la comunidad catalanohablante",
+      technologies: ["Git", "Markdown", "Ruby"],
+      repoUrl: "https://github.com/Sailok25/progit2-ca",
+      demoUrl: "https://github.com/Sailok25/progit2-ca",
+      image: progitImg
+    },
+    {
+      id: 3,
+      title: "DanDanDish",
+      description: "Descripción breve de DanDanDish...",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
+      repoUrl: "https://github.com/Sailok25/dan_dan_dish",
+      demoUrl: "https://sailok25.github.io/dan-dan-dish/",
+      image: danDanDishImg
+    },
+    {
+      id: 4,
+      title: "Catarsis",
+      description: "Descripción breve de Catarsis...",
+      technologies: ["HTML5", "CSS3", "JS"],
+      repoUrl: "https://github.com/Sailok25/Catarsis",
+      demoUrl: "https://sailok25.github.io/Catarsis/",
+      image: catarsisImg
+    },
+    {
+      id: 5,
+      title: "Canción de la Semana",
+      description: "Descripción de Canción de la Semana...",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
+      repoUrl: "https://github.com/Sailok25/Cdls",
+      demoUrl: "https://sailok25.github.io/Cdls/",
+      image: cdlsImg
     }
   ];
 
   const certifications = [
-    { id: 1, name: "React Certification", issuer: "Meta", date: "2023" },
-    { id: 2, name: "Frontend Developer", issuer: "Coursera", date: "2022" }
+    { id: 1, name: "Claude Code in Action", issuer: "Anthropic", date: "2025", photoUrl: "assets/images/certifications/claude-code-certificate.jpg" },
   ];
+
+// En App.js, antes del return
+console.log('Imágenes cargadas:', {
+  contaPizzaImg,
+  progitImg,
+  danDanDishImg,
+  catarsisImg,
+  cdlsImg
+});
 
   return (
     <div className="App min-h-screen relative overflow-hidden bg-white">
@@ -137,7 +186,7 @@ function App() {
 
                 <div className="mt-8 md:mt-10">
                   <a
-                    href="assets/files/CV-Alba_Ayala.png"
+                    href="/assets/files/CV-Alba_Ayala.png"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
@@ -210,6 +259,13 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {certifications.map((cert) => (
                 <div key={cert.id} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="mb-4">
+                    <img
+                      src={cert.photoUrl}
+                      alt={cert.name}
+                      className="w-full h-48 object-cover rounded-lg"
+                    />
+                  </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{cert.name}</h3>
                   <p className="text-gray-600 mb-1">Issuer: {cert.issuer}</p>
                   <p className="text-gray-500">Date: {cert.date}</p>
