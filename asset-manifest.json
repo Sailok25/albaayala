@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/albaayala/static/css/main.740a52c5.css",
-    "main.js": "/albaayala/static/js/main.fa706af9.js",
+    "main.css": "/albaayala/static/css/main.fcf177ce.css",
+    "main.js": "/albaayala/static/js/main.d09f0901.js",
+    "static/media/Dan-Dan-Dish.png": "/albaayala/static/media/Dan-Dan-Dish.1b9c613f92b1fe73d514.png",
+    "static/media/CDLS.png": "/albaayala/static/media/CDLS.ffb19668a26348c26b11.png",
+    "static/media/Catarsis.png": "/albaayala/static/media/Catarsis.0f48dc69da1a3001933e.png",
     "static/media/UhBee-HanByeol.ttf": "/albaayala/static/media/UhBee-HanByeol.51031f7859f29f632d8a.ttf",
+    "static/media/progit-2nd-edition-ca.png": "/albaayala/static/media/progit-2nd-edition-ca.c55ee602b312d2d3bc54.png",
+    "static/media/Conta-Pizza.png": "/albaayala/static/media/Conta-Pizza.951e0b96b1f39354919c.png",
     "static/media/Bryndan_Write.ttf": "/albaayala/static/media/Bryndan_Write.44366527334f1734f433.ttf",
     "static/media/alba-ayala.jpg": "/albaayala/static/media/alba-ayala.769790c693f0a4cefb2b.jpg",
     "static/media/mi-porfo.svg": "/albaayala/static/media/mi-porfo.c390aac68b2b7e3d63f55901c9fa7a70.svg",
     "index.html": "/albaayala/index.html",
-    "main.740a52c5.css.map": "/albaayala/static/css/main.740a52c5.css.map",
-    "main.fa706af9.js.map": "/albaayala/static/js/main.fa706af9.js.map"
+    "main.fcf177ce.css.map": "/albaayala/static/css/main.fcf177ce.css.map",
+    "main.d09f0901.js.map": "/albaayala/static/js/main.d09f0901.js.map"
   },
   "entrypoints": [
-    "static/css/main.740a52c5.css",
-    "static/js/main.fa706af9.js"
+    "static/css/main.fcf177ce.css",
+    "static/js/main.d09f0901.js"
   ]
 }
