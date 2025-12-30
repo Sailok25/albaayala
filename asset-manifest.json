@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/albaayala/static/css/main.740a52c5.css",
+    "main.js": "/albaayala/static/js/main.2afc87b1.js",
+    "static/media/UhBee-HanByeol.ttf": "/albaayala/static/media/UhBee-HanByeol.51031f7859f29f632d8a.ttf",
+    "static/media/Bryndan_Write.ttf": "/albaayala/static/media/Bryndan_Write.44366527334f1734f433.ttf",
+    "static/media/alba-ayala.jpg": "/albaayala/static/media/alba-ayala.769790c693f0a4cefb2b.jpg",
+    "static/media/mi-porfo.svg": "/albaayala/static/media/mi-porfo.c390aac68b2b7e3d63f55901c9fa7a70.svg",
+    "index.html": "/albaayala/index.html",
+    "main.740a52c5.css.map": "/albaayala/static/css/main.740a52c5.css.map",
+    "main.2afc87b1.js.map": "/albaayala/static/js/main.2afc87b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.740a52c5.css",
+    "static/js/main.2afc87b1.js"
+  ]
+}
