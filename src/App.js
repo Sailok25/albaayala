@@ -8,6 +8,7 @@ import cdlsImg from './assets/images/projects/CDLS.png';
 import claudeCert from './assets/images/certifications/claude-code-certificate.jpg';
 import albaayala from './assets/images/alba-ayala.jpg';
 import ExperienceItem from './components/ExperienceItem';
+import Navigation from './components/Navigation';
 import ProjectCard from './components/ProjectCard';
 import CertificationCard from './components/CertificationCard';
 
@@ -105,53 +106,68 @@ function App() {
       </div>
 
       <div className="relative z-10">
-        <header id="home" className="min-h-screen flex flex-col justify-center items-center px-4 py-12 relative">
-          <div className="max-w-[100rem] mx-auto w-full relative h-full">
-            <p className="text-4xl md:text-7xl text-gray-900 mb-4 font-bryndan tracking-wider pl-4 md:pl-[15rem]">
-              Hola, soy
-            </p>
+        <Navigation />
+<header id="home" className="min-h-screen flex flex-col justify-center items-center px-4 py-8 md:py-12 relative overflow-hidden">
+  <div className="max-w-[100rem] mx-auto w-full relative h-full">
+    
+    {/* "Hola, soy" - REAJUSTADO PARA MÓVIL */}
+    <div className="text-center md:text-left">
+      <p className="text-3xl sm:text-4xl md:text-7xl text-gray-900 mb-2 md:mb-4 font-bryndan tracking-wider md:pl-[15rem]">
+        Hola, soy
+      </p>
+    </div>
 
-            <div className="mb-6">
-              <h1 className="text-6xl md:text-10xl lg:text-12xl font-uhbee text-gray-900 leading-none text-center tracking-tight px-4">
-                ALBA AYALA
-              </h1>
-            </div>
+    {/* NOMBRE PRINCIPAL - REESPACIADO */}
+    <div className="mb-4 md:mb-6">
+      <h1 className="text-5xl sm:text-6xl md:text-10xl lg:text-12xl font-uhbee text-gray-900 leading-tight md:leading-none text-center tracking-tight px-2 md:px-4">
+        ALBA<br className="md:hidden" /> AYALA
+      </h1>
+    </div>
 
-            <p className="text-4xl md:text-6xl text-gray-900 mb-12 font-bryndan font-light tracking-wider text-center md:text-right pr-4 md:pr-0">
-              Desarrolladora Frontend
-            </p>
+    {/* TÍTULO - REUBICADO */}
+    <div className="text-center md:text-right mb-8 md:mb-12">
+      <p className="text-2xl sm:text-3xl md:text-6xl text-gray-900 font-bryndan font-light tracking-wider md:pr-0">
+        Desarrolladora<br className="sm:hidden" /> Frontend
+      </p>
+    </div>
 
-            <div className="absolute left-[-50px] md:left-4 bottom-[50px] md:bottom-[-155px] z-20 w-[150px] md:w-[220px] lg:w-[250px]">
-              <img
-                src={miPorfoImage}
-                alt="Dibujo a mano representando a Alba Ayala"
-                className="w-full h-auto object-contain opacity-95 filter grayscale hover:grayscale-0 transition-all duration-500"
-              />
-            </div>
+    {/* IMAGEN - REUBICADA Y REDIMENSIONADA PARA MÓVIL */}
+    <div className="relative md:absolute left-0 md:left-4 bottom-0 md:bottom-[-155px] z-20 w-full md:w-auto flex justify-center md:block">
+      <div className="w-[180px] sm:w-[200px] md:w-[220px] lg:w-[250px] mt-8 md:mt-0">
+        <img
+          src={miPorfoImage}
+          alt="Dibujo a mano representando a Alba Ayala"
+          className="w-full h-auto object-contain opacity-95 filter grayscale hover:grayscale-0 transition-all duration-500"
+        />
+      </div>
+    </div>
 
-            <div className="mt-20 md:mt-32">
-              <a
-                href="#about"
-                className="animate-bounce mx-auto w-16 h-24 md:w-20 md:h-35 rounded-[50px] border-[3px] border-gray-900 flex items-center justify-center p-3 block bg-white/80 backdrop-blur-sm hover:bg-gray-900 hover:text-white transition-colors"
-              >
-                <svg
-                  className="w-8 h-20 md:w-12 md:h-25"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 48"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v40m0 0l6-6m-6 6l-6-6" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </header>
+    {/* FLECHA - CENTRADA Y MEJOR TAMAÑO */}
+    <div className="mt-12 md:mt-32 w-full flex justify-center">
+      <a
+        href="#about"
+        className="animate-bounce w-12 h-16 md:w-20 md:h-35 rounded-[30px] md:rounded-[50px] border-2 md:border-[3px] border-gray-900 flex items-center justify-center p-2 md:p-3 bg-white/80 backdrop-blur-sm hover:bg-gray-900 hover:text-white transition-colors"
+        aria-label="Ir a la siguiente sección"
+      >
+        <svg
+          className="w-6 h-12 md:w-12 md:h-25"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 48"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v40m0 0l6-6m-6 6l-6-6" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</header>
 
         <section id="about" className="py-20 md:py-32 px-4 md:px-8 relative bg-white">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-uhbee text-center mb-12 md:mb-20 text-gray-900 tracking-tight">
-              SOBRE MÍ
+              ACERCA DE MÍ
             </h2>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-20">
