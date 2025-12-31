@@ -5,34 +5,36 @@ import progitImg from './assets/images/projects/progit-2nd-edition-ca.png';
 import danDanDishImg from './assets/images/projects/Dan-Dan-Dish.png';
 import catarsisImg from './assets/images/projects/Catarsis.png';
 import cdlsImg from './assets/images/projects/CDLS.png';
+import claudeCert from './assets/images/certifications/claude-code-certificate.jpg';
 import albaayala from './assets/images/alba-ayala.jpg';
 import ExperienceItem from './components/ExperienceItem';
 import ProjectCard from './components/ProjectCard';
+import CertificationCard from './components/CertificationCard';
 
 function App() {
   const experiences = [
     {
       id: 1,
-      role: "Player Support & Ticket Resolution Specialist",
+      role: "Especialista en Soporte al Jugador y Resolución de Tickets",
       company: "Elite Tokens",
-      period: "ago. 2025 - actually",
-      description: `Desc del puesto\nAptitudes`,
+      period: "ago. 2025 - actualmente",
+      description: `Descripción del puesto\nAptitudes`,
       skills: ["Soporte", "Resolución", "Comunicación"]
     },
     {
       id: 2,
-      role: "Frontend Web Developer using a CMS (Ebasnet)",
+      role: "Desarrolladora Frontend usando un CMS (Ebasnet)",
       company: "Dispromedia",
       period: "ene. 2025 - jun. 2025",
-      description: `Desc del puesto\nAptitudes`,
+      description: `Descripción del puesto\nAptitudes`,
       skills: ["React", "CMS", "Tailwind", "JavaScript"]
     },
     {
       id: 3,
-      role: "IT Hardware Repair Technician",
+      role: "Técnica en Reparación de Hardware IT",
       company: "Studi-Web S.C.P.",
       period: "nov. 2022 - feb. 2023",
-      description: `Desc del puesto\nAptitudes`,
+      description: `Descripción del puesto\nAptitudes`,
       skills: ["Hardware", "Reparación", "Diagnóstico"]
     }
   ];
@@ -41,15 +43,14 @@ function App() {
     {
       id: 1,
       title: "ContaPizza",
-      description: "Una app que gestiona el día que le toca hacer la pizza en casa a mis hermanos y a mí.",
-      technologies: ["React", "Tailwind", "HTML5"],
-      repoUrl: "#",
-      demoUrl: "#",
+      description: "Aplicación Flutter con Firebase para el móvil, fue creada para gestionar los turnos familiares de preparación de la base de la pizza los sábados.",
+      technologies: ["Dart", "Flutter", "Android", "Firebase"],
+      repoUrl: "https://github.com/Sailok25/Conta-Pizza",
       image: contaPizzaImg
     },
     {
       id: 2,
-      title: "ProGit (2º Edition) - Catalan Version",
+      title: "ProGit (2ª Edición) - Versión Catalana",
       description: "Traducción del libro 'Pro Git' (2ª edición) al catalán. Un proyecto de contribución open-source que hace la documentación de Git accesible a la comunidad catalanohablante",
       technologies: ["Git", "Markdown", "Ruby"],
       repoUrl: "https://github.com/Sailok25/progit2-ca",
@@ -59,7 +60,7 @@ function App() {
     {
       id: 3,
       title: "DanDanDish",
-      description: "Descripción breve de DanDanDish...",
+      description: "Inspirado en el popular piedra-papel-tijera, ahora con temática de combate, es un juego popular infantil. Desarrollado con JS, puedes jugar contra la CPU. Está traducido a varios idiomas.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
       repoUrl: "https://github.com/Sailok25/dan_dan_dish",
       demoUrl: "https://sailok25.github.io/dan-dan-dish/",
@@ -68,8 +69,8 @@ function App() {
     {
       id: 4,
       title: "Catarsis",
-      description: "Descripción breve de Catarsis...",
-      technologies: ["HTML5", "CSS3", "JS"],
+      description: "Sitio web oficial de la banda Catarsis de Badajoz, fue uno de mis primeros proyectos web profesionales como desarrollador Frontend.",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
       repoUrl: "https://github.com/Sailok25/Catarsis",
       demoUrl: "https://sailok25.github.io/Catarsis/",
       image: catarsisImg
@@ -77,7 +78,7 @@ function App() {
     {
       id: 5,
       title: "Canción de la Semana",
-      description: "Descripción de Canción de la Semana...",
+      description: "Archivo musical personal desde 2021 donde registro semanalmente esa canción que se repite en mi cabeza, sin filtros de género o popularidad.",
       technologies: ["HTML5", "CSS3", "JavaScript"],
       repoUrl: "https://github.com/Sailok25/Cdls",
       demoUrl: "https://sailok25.github.io/Cdls/",
@@ -86,17 +87,14 @@ function App() {
   ];
 
   const certifications = [
-    { id: 1, name: "Claude Code in Action", issuer: "Anthropic", date: "2025", photoUrl: "assets/images/certifications/claude-code-certificate.jpg" },
+    {
+      id: 1,
+      name: "Claude Code in Action",
+      issuer: "Anthropic",
+      date: "2025",
+      photoUrl: claudeCert
+    },
   ];
-
-// En App.js, antes del return
-console.log('Imágenes cargadas:', {
-  contaPizzaImg,
-  progitImg,
-  danDanDishImg,
-  catarsisImg,
-  cdlsImg
-});
 
   return (
     <div className="App min-h-screen relative overflow-hidden bg-white">
@@ -110,7 +108,7 @@ console.log('Imágenes cargadas:', {
         <header id="home" className="min-h-screen flex flex-col justify-center items-center px-4 py-12 relative">
           <div className="max-w-[100rem] mx-auto w-full relative h-full">
             <p className="text-4xl md:text-7xl text-gray-900 mb-4 font-bryndan tracking-wider pl-4 md:pl-[15rem]">
-              Hello, I'm
+              Hola, soy
             </p>
 
             <div className="mb-6">
@@ -120,7 +118,7 @@ console.log('Imágenes cargadas:', {
             </div>
 
             <p className="text-4xl md:text-6xl text-gray-900 mb-12 font-bryndan font-light tracking-wider text-center md:text-right pr-4 md:pr-0">
-              Frontend developer
+              Desarrolladora Frontend
             </p>
 
             <div className="absolute left-[-50px] md:left-4 bottom-[50px] md:bottom-[-155px] z-20 w-[150px] md:w-[220px] lg:w-[250px]">
@@ -153,7 +151,7 @@ console.log('Imágenes cargadas:', {
         <section id="about" className="py-20 md:py-32 px-4 md:px-8 relative bg-white">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-uhbee text-center mb-12 md:mb-20 text-gray-900 tracking-tight">
-              ABOUT ME
+              SOBRE MÍ
             </h2>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-20">
@@ -171,15 +169,11 @@ console.log('Imágenes cargadas:', {
                     </div>
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-3"></div>
-                      <p className="text-gray-700 text-lg">Constantemente aprendiendo cosas nuevas</p>
+                      <p className="text-gray-700 text-lg">Constantemente aprendiendo <span className="font-semibold">cosas nuevas</span></p>
                     </div>
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-3"></div>
                       <p className="text-gray-700 text-lg">Responsable y colaborativa en <span className="font-semibold">trabajo en equipo</span></p>
-                    </div>
-                    <div className="flex items-start">
-                      <div className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-3"></div>
-                      <p className="text-gray-700 text-lg">Comprometida con el <span className="font-semibold">aprendizaje continuo</span></p>
                     </div>
                   </div>
                 </div>
@@ -204,7 +198,7 @@ console.log('Imágenes cargadas:', {
                         d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                       />
                     </svg>
-                    DOWNLOAD CV
+                    DESCARGAR CV
                   </a>
                 </div>
               </div>
@@ -228,7 +222,7 @@ console.log('Imágenes cargadas:', {
         <section id="experience" className="py-20 md:py-32 px-4 md:px-8 bg-gray-50/50 relative">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-uhbee text-center mb-12 md:mb-16 text-gray-900 tracking-tight">
-              EXPERIENCE
+              EXPERIENCIA
             </h2>
             <div className="space-y-8 md:space-y-12">
               {experiences.map((exp) => (
@@ -241,7 +235,7 @@ console.log('Imágenes cargadas:', {
         <section id="projects" className="py-20 md:py-32 px-4 md:px-8 bg-white/50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-uhbee text-center mb-12 md:mb-16 text-gray-900 tracking-tight">
-              PROJECTS
+              PROYECTOS
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project) => (
@@ -252,24 +246,13 @@ console.log('Imágenes cargadas:', {
         </section>
 
         <section id="certifications" className="py-20 md:py-32 px-4 md:px-8 bg-gray-50/50">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-uhbee text-center mb-12 md:mb-16 text-gray-900 tracking-tight">
-              CERTIFICATIONS
+              CERTIFICACIONES
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {certifications.map((cert) => (
-                <div key={cert.id} className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                  <div className="mb-4">
-                    <img
-                      src={cert.photoUrl}
-                      alt={cert.name}
-                      className="w-full h-48 object-cover rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{cert.name}</h3>
-                  <p className="text-gray-600 mb-1">Issuer: {cert.issuer}</p>
-                  <p className="text-gray-500">Date: {cert.date}</p>
-                </div>
+                <CertificationCard key={cert.id} certification={cert} />
               ))}
             </div>
           </div>
@@ -278,42 +261,42 @@ console.log('Imágenes cargadas:', {
         <section id="contact" className="py-20 md:py-32 px-4 md:px-8 bg-white/50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-5xl md:text-6xl font-uhbee text-center mb-12 md:mb-16 text-gray-900 tracking-tight">
-              CONTACT
+              CONTACTO
             </h2>
 
             <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-200 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-                DO YOU WANT TO WORK ON A PROJECT TOGETHER, OR DO YOU HAVE A SUGGESTION FOR ONE?
+                ¿Quieres trabajar conmigo en un proyecto, o tiens una sugerencia para uno?
                 <br />
-                <span className="text-primary-600">SEND ME A MESSAGE NOW!</span>
+                ¡Enviame un mensaje ahora!
               </h3>
 
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-gray-700 mb-2 font-medium">Your name</label>
+                    <label className="block text-gray-700 mb-2 font-medium">Tu nombre</label>
                     <input
                       type="text"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all"
-                      placeholder="Volodimir Zayeb"
+                      placeholder="Tu nombre"
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-700 mb-2 font-medium">Email Address</label>
+                    <label className="block text-gray-700 mb-2 font-medium">Correo electrónico</label>
                     <input
                       type="email"
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all"
-                      placeholder="volozayeb27@gmail.com"
+                      placeholder="ejemplo@email.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-gray-700 mb-2 font-medium">Message</label>
+                  <label className="block text-gray-700 mb-2 font-medium">Mensaje</label>
                   <textarea
                     rows="5"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all"
-                    placeholder="Hey i see your webpage and i want to do a project with you, contact me for more details. I wait for your reply soon!!"
+                    placeholder="Hola, vi tu portafolio y me gustaría colaborar en un proyecto contigo, contáctame para más detalles. ¡Espero tu respuesta pronto!"
                   ></textarea>
                 </div>
 
@@ -321,7 +304,7 @@ console.log('Imágenes cargadas:', {
                   type="submit"
                   className="btn-black w-full py-4 text-lg font-semibold rounded-lg hover:scale-[1.02] transition-transform"
                 >
-                  SEND
+                  ENVIAR
                 </button>
               </form>
             </div>
@@ -331,7 +314,7 @@ console.log('Imágenes cargadas:', {
         <footer className="py-8 px-4 border-t border-gray-200 bg-white">
           <div className="max-w-6xl mx-auto text-center">
             <p className="text-gray-600 font-ui">
-              © {new Date().getFullYear()} Alba Ayala. All rights reserved.
+              © {new Date().getFullYear()} Alba Ayala. Todos los derechos reservados.
             </p>
           </div>
         </footer>

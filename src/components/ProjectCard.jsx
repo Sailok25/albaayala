@@ -26,7 +26,6 @@ const ProjectCard = ({ project }) => {
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               onError={handleImageError}
             />
-            {/* Placeholder oculto inicialmente */}
             <div 
               className="absolute inset-0 hidden items-center justify-center"
               style={{ display: 'none' }}
