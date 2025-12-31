@@ -171,7 +171,7 @@ function App() {
 
               {/* Botón de Correo */}
               <a
-                href="mailto:alba@ejemplo.com"
+                href="mailto:albaayvi4@gmail.com"
                 className="inline-flex items-center gap-2 md:gap-3 bg-white text-gray-900 border-2 border-gray-900 px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-medium hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 <svg
