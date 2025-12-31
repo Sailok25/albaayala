@@ -5,7 +5,7 @@ const sections = [
   { id: "experience", label: "EXPERIENCIA" },
   { id: "projects", label: "PROYECTOS" },
   { id: "certifications", label: "CERTIFICADOS" },
-  { id: "contact", label: "CONTACTAME" },
+  { id: "contact", label: "CONTACTO" },
 ];
 
 export default function Navigation() {

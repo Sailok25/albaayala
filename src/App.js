@@ -19,25 +19,25 @@ function App() {
       role: "Especialista en Soporte al Jugador y Resolución de Tickets",
       company: "Elite Tokens",
       period: "ago. 2025 - actualmente",
-      description: `Descripción del puesto\nAptitudes`,
-      skills: ["Soporte", "Resolución", "Comunicación"]
+      description: `Responsable de la gestión y resolución de tickets de soporte dentro de la plataforma. Me encargo de asistir a los usuarios, revisar evidencias, resolver disputas de partidos, coordinar decisiones del staff y asegurar una experiencia justa y fluida para los jugadores. Trabajo diariamente en inglés, desarrollando habilidades de comunicación, gestión de conflictos y atención al usuario.`,
+      skills: ["Trabajo en equipo en remoto", "Atención al cliente", "Gestión de tickets", "Comunicación bilingüe (EN)", "Resolución de problemas", "Soporte al usuario"]
     },
     {
       id: 2,
       role: "Desarrolladora Frontend usando un CMS (Ebasnet)",
-      company: "Dispromedia",
+      company: "Dispromèdia - Agència Web",
       period: "ene. 2025 - jun. 2025",
-      description: `Descripción del puesto\nAptitudes`,
-      skills: ["React", "CMS", "Tailwind", "JavaScript"]
+      description: `Desarrollo y mantenimiento de páginas web utilizando el CMS Ebasnet. Implementación de diseños responsivos, optimización SEO, edición de imágenes y colaboración en equipo para la creación de proyectos web empresariales completos.`,
+      skills: ["Ebasnet", "Tailwind", "JavaScript", "HTML5", "CSS/SCSS", "SEO", "Desarrollo web", "Gestión de proyectos", "Trabajo en equipo", "Edición de imágenes"]
     },
     {
       id: 3,
       role: "Técnica en Reparación de Hardware IT",
       company: "Studi-Web S.C.P.",
       period: "nov. 2022 - feb. 2023",
-      description: `Descripción del puesto\nAptitudes`,
-      skills: ["Hardware", "Reparación", "Diagnóstico"]
-    }
+      description: `Reparación y mantenimiento de equipos informáticos. Diagnóstico de problemas de hardware, montaje de componentes, cableado estructurado y atención al cliente tanto presencial como telefónica.`,
+      skills: ["Hardware", "Reparación", "Diagnóstico", "Montaje de equipos", "Cableado estructurado", "Mantenimiento informático", "Atención al cliente", "Ventas"]
+    },
   ];
 
   const projects = [
@@ -343,9 +343,7 @@ function App() {
 
             <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-200 shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-                ¿Quieres trabajar conmigo en un proyecto, o tiens una sugerencia para uno?
-                <br />
-                ¡Enviame un mensaje ahora!
+                ¿Trabajamos juntos en un proyecto, o tiens una sugerencia para uno?
               </h3>
 
               <form className="space-y-6">

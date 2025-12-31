@@ -12,23 +12,23 @@ const ExperienceItem = ({ experience }) => {
           <p className="text-xl text-gray-700 font-medium">{experience.role}</p>
         </div>
         
-        {/* PERÍODO - ALINEADO A LA DERECHA COMO EN CANVA */}
+        {/* PERÍODO */}
         <span className="mt-2 md:mt-0 text-gray-600 font-medium text-lg">
           {experience.period}
         </span>
       </div>
       
-      {/* LISTA CON VIÑETAS - COMO EN TUS DISEÑOS */}
+      {/* LISTA CON VIÑETAS */}
       <ul className="space-y-2 text-gray-700 text-lg">
         {experience.description.split('\n').map((item, index) => (
           <li key={index} className="flex items-start">
-            <span className="mr-3 mt-2 w-2 h-2 bg-gray-900 rounded-full flex-shrink-0"></span>
+            {/* <span className="mr-3 mt-2 w-2 h-2 bg-gray-900 rounded-full flex-shrink-0"></span> */}
             <span>{item.trim()}</span>
           </li>
         ))}
       </ul>
       
-      {/* APTITUDES - SI LAS TIENES */}
+      {/* APTITUDES */}
       {experience.skills && (
         <div className="mt-6">
           <h4 className="text-lg font-semibold text-gray-900 mb-3">Aptitudes:</h4>
