@@ -1,16 +1,24 @@
 import './App.css';
+// Images
 import miPorfoImage from './assets/images/mi-porfo.svg';
+import albaayala from './assets/images/alba-ayala.jpg';
+// Project Images
 import contaPizzaImg from './assets/images/projects/Conta-Pizza.png';
 import progitImg from './assets/images/projects/progit-2nd-edition-ca.png';
 import danDanDishImg from './assets/images/projects/Dan-Dan-Dish.png';
 import catarsisImg from './assets/images/projects/Catarsis.png';
 import cdlsImg from './assets/images/projects/CDLS.png';
+import ayalaToolsImg from './assets/images/projects/AyalaTools.png';
+import velarieImg from './assets/images/projects/Velarie.png';
+import cronoHubImg from './assets/images/projects/CronoHub.png';
+// Certification Images
 import claudeCert from './assets/images/certifications/claude-code-certificate.jpg';
-import albaayala from './assets/images/alba-ayala.jpg';
+// Components
 import ExperienceItem from './components/ExperienceItem';
 import Navigation from './components/Navigation';
 import ProjectCard from './components/ProjectCard';
 import CertificationCard from './components/CertificationCard';
+// Contexts
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
 
@@ -86,7 +94,34 @@ function App() {
       repoUrl: "https://github.com/Sailok25/Cdls",
       demoUrl: "https://sailok25.github.io/Cdls/",
       image: cdlsImg
-    }
+    },
+    {
+      id: 6,
+      title: "AyalaTools",
+      description: "Colección de herramientas web gratuitas desarrolladas por mí para facilitar tareas comunes.",
+      technologies: ["HTML5", "Tailwinds", "React"],
+      repoUrl: "https://github.com/Sailok25/AyalaTools",
+      demoUrl: "https://ayalatools.vercel.app/",
+      image: ayalaToolsImg
+    },
+    {
+      id: 7,
+      title: "Velarie - Tienda Online",
+      description: "Tienda online ficticia creada como proyecto de práctica para simular un entorno de e-commerce completo.",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
+      repoUrl: "https://github.com/Sailok25/Velarie",
+      demoUrl: "https://sailok25.github.io/Velarie/",
+      image: velarieImg
+    },
+    {
+      id: 8,
+      title: "CronoHub",
+      description: "Aplicación web para gestionar y organizar tareas diarias, ayudando a mejorar la productividad personal.",
+      technologies: ["HTML5", "CSS3", "JavaScript"],
+      repoUrl: "https://github.com/Sailok25/CronoHub",
+      demoUrl: "https://sailok25.github.io/CronoHub/",
+      image: cronoHubImg
+    },
   ];
 
   const certifications = [
