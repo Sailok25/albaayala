@@ -362,7 +362,7 @@ function App() {
             <section id="certifications" className="py-20 md:py-32 px-4 md:px-8 bg-gray-50/50">
               <div className="max-w-6xl mx-auto">
                 <h2 className="text-5xl md:text-6xl font-uhbee text-center mb-12 md:mb-16 text-gray-900 tracking-tight">
-                  CERTIFICACIONES
+                  CERTIFICADOS
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {certifications.map((cert) => (
