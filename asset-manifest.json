@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/albaayala/static/css/main.1ddc1272.css",
-    "main.js": "/albaayala/static/js/main.4eb0a033.js",
+    "main.js": "/albaayala/static/js/main.d4230bdd.js",
     "static/media/Dan-Dan-Dish.png": "/albaayala/static/media/Dan-Dan-Dish.c0ef98fc1fdacb62b9e9.png",
     "static/media/CDLS.png": "/albaayala/static/media/CDLS.0fb62431f061d46ad70b.png",
     "static/media/progit-2nd-edition-ca.png": "/albaayala/static/media/progit-2nd-edition-ca.81264469c4a573649c8b.png",
@@ -17,10 +17,10 @@
     "static/media/mi-porfo.svg": "/albaayala/static/media/mi-porfo.c390aac68b2b7e3d63f55901c9fa7a70.svg",
     "index.html": "/albaayala/index.html",
     "main.1ddc1272.css.map": "/albaayala/static/css/main.1ddc1272.css.map",
-    "main.4eb0a033.js.map": "/albaayala/static/js/main.4eb0a033.js.map"
+    "main.d4230bdd.js.map": "/albaayala/static/js/main.d4230bdd.js.map"
   },
   "entrypoints": [
     "static/css/main.1ddc1272.css",
-    "static/js/main.4eb0a033.js"
+    "static/js/main.d4230bdd.js"
   ]
 }
