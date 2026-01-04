@@ -95,33 +95,33 @@ function App() {
       demoUrl: "https://sailok25.github.io/Cdls/",
       image: cdlsImg
     },
-    {
-      id: 6,
-      title: "AyalaTools",
-      description: "Colección de herramientas web gratuitas desarrolladas por mí para facilitar tareas comunes.",
-      technologies: ["HTML5", "Tailwinds", "React"],
-      repoUrl: "https://github.com/Sailok25/AyalaTools",
-      demoUrl: "https://ayalatools.vercel.app/",
-      image: ayalaToolsImg
-    },
-    {
-      id: 7,
-      title: "Velarie - Tienda Online",
-      description: "Tienda online ficticia creada como proyecto de práctica para simular un entorno de e-commerce completo.",
-      technologies: ["HTML5", "CSS3", "JavaScript"],
-      repoUrl: "https://github.com/Sailok25/Velarie",
-      demoUrl: "https://sailok25.github.io/Velarie/",
-      image: velarieImg
-    },
-    {
-      id: 8,
-      title: "CronoHub",
-      description: "Aplicación web para gestionar y organizar tareas diarias, ayudando a mejorar la productividad personal.",
-      technologies: ["HTML5", "CSS3", "JavaScript"],
-      repoUrl: "https://github.com/Sailok25/CronoHub",
-      demoUrl: "https://sailok25.github.io/CronoHub/",
-      image: cronoHubImg
-    },
+    // {
+    //   id: 6,
+    //   title: "AyalaTools",
+    //   description: "Colección de herramientas web gratuitas desarrolladas por mí para facilitar tareas comunes.",
+    //   technologies: ["HTML5", "Tailwinds", "React"],
+    //   repoUrl: "https://github.com/Sailok25/AyalaTools",
+    //   demoUrl: "https://ayalatools.vercel.app/",
+    //   image: ayalaToolsImg
+    // },
+    // {
+    //   id: 7,
+    //   title: "Velarie - Tienda Online",
+    //   description: "Tienda online ficticia creada como proyecto de práctica para simular un entorno de e-commerce completo.",
+    //   technologies: ["HTML5", "CSS3", "JavaScript"],
+    //   repoUrl: "https://github.com/Sailok25/Velarie",
+    //   demoUrl: "https://sailok25.github.io/Velarie/",
+    //   image: velarieImg
+    // },
+    // {
+    //   id: 8,
+    //   title: "CronoHub",
+    //   description: "Aplicación web para gestionar y organizar tareas diarias, ayudando a mejorar la productividad personal.",
+    //   technologies: ["HTML5", "CSS3", "JavaScript"],
+    //   repoUrl: "https://github.com/Sailok25/CronoHub",
+    //   demoUrl: "https://sailok25.github.io/CronoHub/",
+    //   image: cronoHubImg
+    // },
   ];
 
   const certifications = [
