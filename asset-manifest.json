@@ -1,23 +1,26 @@
 {
   "files": {
     "main.css": "/albaayala/static/css/main.1ddc1272.css",
-    "main.js": "/albaayala/static/js/main.0d4f6c70.js",
+    "main.js": "/albaayala/static/js/main.4eb0a033.js",
     "static/media/Dan-Dan-Dish.png": "/albaayala/static/media/Dan-Dan-Dish.c0ef98fc1fdacb62b9e9.png",
     "static/media/CDLS.png": "/albaayala/static/media/CDLS.0fb62431f061d46ad70b.png",
     "static/media/progit-2nd-edition-ca.png": "/albaayala/static/media/progit-2nd-edition-ca.81264469c4a573649c8b.png",
     "static/media/Catarsis.png": "/albaayala/static/media/Catarsis.97acecf60eb5e8d9283c.png",
     "static/media/UhBee-HanByeol.ttf": "/albaayala/static/media/UhBee-HanByeol.51031f7859f29f632d8a.ttf",
+    "static/media/Velarie.png": "/albaayala/static/media/Velarie.6924350eb5e24132417f.png",
     "static/media/claude-code-certificate.jpg": "/albaayala/static/media/claude-code-certificate.ef98e6603291b659e93b.jpg",
     "static/media/Conta-Pizza.png": "/albaayala/static/media/Conta-Pizza.34c9bad4ba465da3edda.png",
+    "static/media/CronoHub.png": "/albaayala/static/media/CronoHub.2c8a436e96f3b47ada18.png",
     "static/media/Bryndan_Write.ttf": "/albaayala/static/media/Bryndan_Write.44366527334f1734f433.ttf",
     "static/media/alba-ayala.jpg": "/albaayala/static/media/alba-ayala.769790c693f0a4cefb2b.jpg",
+    "static/media/AyalaTools.png": "/albaayala/static/media/AyalaTools.aec9bf25a38234e0356a.png",
     "static/media/mi-porfo.svg": "/albaayala/static/media/mi-porfo.c390aac68b2b7e3d63f55901c9fa7a70.svg",
     "index.html": "/albaayala/index.html",
     "main.1ddc1272.css.map": "/albaayala/static/css/main.1ddc1272.css.map",
-    "main.0d4f6c70.js.map": "/albaayala/static/js/main.0d4f6c70.js.map"
+    "main.4eb0a033.js.map": "/albaayala/static/js/main.4eb0a033.js.map"
   },
   "entrypoints": [
     "static/css/main.1ddc1272.css",
-    "static/js/main.0d4f6c70.js"
+    "static/js/main.4eb0a033.js"
   ]
 }
