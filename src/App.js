@@ -13,6 +13,9 @@ import velarieImg from './assets/images/projects/Velarie.png';
 import cronoHubImg from './assets/images/projects/CronoHub.png';
 // Certification Images
 import claudeCert from './assets/images/certifications/claude-code-certificate.jpg';
+import fluencyAICert from './assets/images/certifications/fluency-ai.jpg';
+import introduccionAICert from './assets/images/certifications/introduccion-ai.jpg';
+
 // Components
 import ExperienceItem from './components/ExperienceItem';
 import Navigation from './components/Navigation';
@@ -132,6 +135,20 @@ function App() {
       date: "2025",
       photoUrl: claudeCert
     },
+    {
+      id: 2,
+      name: "Fluency de IA",
+      issuer: "Microsoft Learn",
+      date: "2026",
+      photoUrl: fluencyAICert
+    },
+    {
+      id: 3,
+      name: "Introducción a la IA",
+      issuer: "Microsoft Learn",
+      date: "2026",
+      photoUrl: introduccionAICert
+    }
   ];
 
   return (
