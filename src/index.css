@@ -12,7 +12,7 @@
   font-display: swap;
 }
 
-/* 2. UHBEE HANBYEOL (para tu nombre - IMPACTO) */
+/* 2. UHBEE HANBYEOL (para titulos) */
 @font-face {
   font-family: 'UhBee HanByeol';
   src: url('./assets/fonts/UhBee-HanByeol.ttf') format('truetype');
@@ -104,7 +104,7 @@
 
 /* Estilos globales adicionales */
 
-/* Scroll personalizado */
+/* Scroll-bar custom*/
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -122,8 +122,26 @@
   background: #555;
 }
 
-/* Selección de texto */
+/* Color al seleccionar un texto */
 ::selection {
   background-color: rgba(42, 42, 42, 0.2);
   color: #000;
+}
+
+
+
+/* Añade esto a tu index.css */
+.dark {
+  color-scheme: dark;
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Asegúrate de que los elementos se adapten al tema oscuro */
+.dark {
+  background-color: rgba(31, 41, 55, 0.8);
+}
+
+.dark .border-gray-200 {
+  border-color: rgba(107, 114, 128, 0.5);
 }
