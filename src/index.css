@@ -1,9 +1,9 @@
-/* src/index.css */
+/* src/index.css - VERSIÓN SENSATA */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 1. BRYNDAN WRITE (para textos pequeños/cursiva) */
+/* ===== FUENTES ===== */
 @font-face {
   font-family: 'Bryndan Write';
   src: url('./assets/fonts/Bryndan_Write.ttf') format('truetype');
@@ -12,25 +12,20 @@
   font-display: swap;
 }
 
-/* 2. UHBEE HANBYEOL (para titulos) */
 @font-face {
   font-family: 'UhBee HanByeol';
   src: url('./assets/fonts/UhBee-HanByeol.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  /* Opcional: desactiva ligaduras para más legibilidad */
-  font-feature-settings: "liga" off, "clig" off, "calt" off;
 }
 
-/* 3. FUENTE SANS-SERIF (para todo lo demás) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-
-/* Clases personalizadas para Tailwind */
+/* ===== CLASES PERSONALIZADAS ===== */
 @layer base {
   html {
     scroll-behavior: smooth;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   h1,
@@ -42,14 +37,10 @@
 }
 
 @layer components {
-
-  /* Bryndan - cursiva personal */
   .font-bryndan {
     font-family: 'Bryndan Write', 'Brush Script MT', cursive;
-    font-style: normal;
   }
 
-  /* UhBee - impacto visual */
   .font-uhbee {
     font-family: 'UhBee HanByeol', sans-serif;
     letter-spacing: 0.05em;
@@ -57,13 +48,50 @@
     font-weight: normal;
   }
 
-  /* Sans-serif - legibilidad */
   .font-ui {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
+
+  /* Botones base */
+  .btn-black {
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #000000;
+    cursor: pointer;
+  }
+
+  .btn-black:hover {
+    background-color: white;
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-outline-black {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .btn-outline-black:hover {
+    background-color: #000000;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
 }
 
-/* Utilidades personalizadas */
 @layer utilities {
   .text-7xl {
     font-size: 5rem;
@@ -89,22 +117,16 @@
     font-size: 12rem;
   }
 
-  .text-15xl {
-    font-size: 15rem;
-  }
-
   .animation-delay-2000 {
     animation-delay: 2s;
   }
-  
+
   .animation-delay-4000 {
     animation-delay: 4s;
   }
 }
 
-/* Estilos globales adicionales */
-
-/* Scroll-bar custom*/
+/* ===== ESTILOS GLOBALES ===== */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -122,26 +144,67 @@
   background: #555;
 }
 
-/* Color al seleccionar un texto */
 ::selection {
   background-color: rgba(42, 42, 42, 0.2);
   color: #000;
 }
 
-
-
-/* Añade esto a tu index.css */
+/* ===== MODO OSCURO ===== */
 .dark {
   color-scheme: dark;
-  background-color: #111827;
-  color: #f9fafb;
 }
 
-/* Asegúrate de que los elementos se adapten al tema oscuro */
-.dark {
-  background-color: rgba(31, 41, 55, 0.8);
+.dark ::-webkit-scrollbar-track {
+  background: #181818;
 }
 
-.dark .border-gray-200 {
-  border-color: rgba(107, 114, 128, 0.5);
+.dark ::-webkit-scrollbar-thumb {
+  background: #5c5c5c;
+  border-radius: 5px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+.dark ::selection {
+  background-color: rgba(156, 163, 175, 0.3);
+  color: #ffffff;
+}
+
+/* ===== BOTONES EN OSCURO ===== */
+.dark .btn-black {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.dark .btn-black:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.dark .btn-outline-black {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.dark .btn-outline-black:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+/* ===== ETIQUETAS DE TECNOLOGÍAS ===== */
+.dark .bg-white\/90 {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* ===== IMÁGEN SVG ===== */
+.dark img[src*=".svg"]:not(.no-invert) {
+  filter: invert(1) brightness(2) contrast(0.9);
 }
