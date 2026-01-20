@@ -7,6 +7,7 @@ import progitImg from './assets/images/projects/progit-2nd-edition-ca.png';
 import danDanDishImg from './assets/images/projects/Dan-Dan-Dish.png';
 import catarsisImg from './assets/images/projects/Catarsis.png';
 import cdlsImg from './assets/images/projects/CDLS.png';
+import rtvePremidImg from './assets/images/projects/RTVE-PreMiD.png';
 // Certification Images
 import claudeCert from './assets/images/certifications/claude-code-certificate.jpg';
 import fluencyAICert from './assets/images/certifications/fluency-ai.jpg';
@@ -91,6 +92,15 @@ function App() {
       repoUrl: "https://github.com/Sailok25/Cdls",
       demoUrl: "https://sailok25.github.io/Cdls/",
       image: cdlsImg
+    },
+    {
+      id: 6,
+      title: "RTVE PreMiD",
+      description: "Extensión para PreMiD que muestra la información del contenido que estás viendo en RTVE directamente en Discord.",
+      technologies: ["TypeScript", "Web Extension"],
+      repoUrl: "https://github.com/PreMiD/Activities/tree/main/websites/R/RTVE",
+      demoUrl: "https://premid.app/library/rtve",
+      image: rtvePremidImg
     },
   ];
 
