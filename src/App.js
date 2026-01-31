@@ -282,7 +282,7 @@ function App() {
 
                 <div className="mt-8 md:mt-10">
                   <a
-                    href="assets/files/CV-Alba_Ayala.png"
+                    href="assets/files/CV-Alba_Ayala.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 bg-gray-900 dark:bg-white text-white dark:text-black px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
